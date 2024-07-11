@@ -9,7 +9,10 @@ lifecycleRuntimeKtx = "2.8.3"
 activityCompose = "1.9.0"
 composeBom = "2024.06.00"
 hilt = "2.51.1"
+hilt-navigation-compose = "1.2.0"
 ksp = "2.0.0-1.0.22"
+apollo = "3.8.2"
+okhttp3 = "4.12.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -31,6 +34,14 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 # hilt
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hilt-navigation-compose = {group ="androidx.hilt", name="hilt-navigation-compose", version.ref="hilt-navigation-compose"}
+
+# apollo
+apollo-runtime = { group = "com.apollographql.apollo3", name = "apollo-runtime", version.ref = "apollo" }
+
+# Okhttp3
+okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
+okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -38,3 +49,4 @@ jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = 
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+apollo = { id = "com.apollographql.apollo3", version.ref = "apollo" }

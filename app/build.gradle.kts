@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.apollo)
 }
 
 android {
@@ -45,6 +46,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeCompiler {
         enableStrongSkippingMode = true
@@ -53,6 +55,12 @@ android {
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
+
+    apollo {
+        service("service") {
+            packageName.set("mende273.apollographqlclientexample")
         }
     }
 }
@@ -75,7 +83,15 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // dagger Hilt dependency injection
+    // hilt
     implementation(libs.hilt.android)
+    implementation(libs.hilt.navigation.compose)
     ksp(libs.hilt.compiler)
+
+    //apollo
+    implementation(libs.apollo.runtime)
+
+    // okhttp3
+    implementation(libs.okhttp3)
+    implementation(libs.okhttp3.logging.interceptor)
 }
