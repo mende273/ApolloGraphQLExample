@@ -94,4 +94,7 @@ dependencies {
     // okhttp3
     implementation(libs.okhttp3)
     implementation(libs.okhttp3.logging.interceptor)
+
+    // lifecycle
+    implementation(libs.lifecycle.runtime.compose)
 }
