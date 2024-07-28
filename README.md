@@ -1,6 +1,6 @@
 # Apollo Graphql Android Example
 
-Simple implementation of Apollo GraphQL client for Android. The project is using the free graphql api from [SpaceX](https://spacex-production.up.railway.app/) for providing data.
+Simple implementation of <b>Apollo GraphQL</b> client for <b>Android</b>. The project is using the free graphql api from [SpaceX](https://spacex-production.up.railway.app/) for providing data.
 
 ## What is Apollo?
 [Apollo](https://www.apollographql.com/docs/kotlin/) is a GraphQL client that generates Kotlin and Java models from GraphQL queries.
