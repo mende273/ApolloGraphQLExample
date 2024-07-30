@@ -1,4 +1,4 @@
-# Apollo Graphql Android Example
+# Apollo GraphQL Android Example
 
 Simple implementation of <b>Apollo GraphQL</b> client for <b>Android</b>. The project is using the free graphql api from [SpaceX](https://spacex-production.up.railway.app/) for providing data.
 
