@@ -11,7 +11,7 @@ composeBom = "2024.06.00"
 hilt = "2.51.1"
 hilt-navigation-compose = "1.2.0"
 ksp = "2.0.0-1.0.22"
-apollo = "3.8.2"
+apollo = "4.0.0"
 okhttp3 = "4.12.0"
 lifecycle = "2.8.4"
 
@@ -41,7 +41,7 @@ hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-com
 lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle" }
 
 # apollo
-apollo-runtime = { group = "com.apollographql.apollo3", name = "apollo-runtime", version.ref = "apollo" }
+apollo-runtime = { group = "com.apollographql.apollo", name = "apollo-runtime", version.ref = "apollo" }
 
 # Okhttp3
 okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
@@ -53,4 +53,4 @@ jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = 
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
-apollo = { id = "com.apollographql.apollo3", version.ref = "apollo" }
+apollo = { id = "com.apollographql.apollo", version.ref = "apollo" }
