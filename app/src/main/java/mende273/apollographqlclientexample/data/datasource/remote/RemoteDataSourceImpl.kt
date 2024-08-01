@@ -1,6 +1,6 @@
 package mende273.apollographqlclientexample.data.datasource.remote
 
-import com.apollographql.apollo3.ApolloClient
+import com.apollographql.apollo.ApolloClient
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import mende273.apollographqlclientexample.HistoriesQuery
