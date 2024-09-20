@@ -11,12 +11,12 @@ plugins {
 
 android {
     namespace = "mende273.apollographqlclientexample"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "mende273.apollographqlclientexample"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -48,10 +48,7 @@ android {
         compose = true
         buildConfig = true
     }
-    composeCompiler {
-        enableStrongSkippingMode = true
-        reportsDestination = layout.buildDirectory.dir("compose_compiler")
-    }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
